@@ -2,12 +2,16 @@
   "name": "ai-com-gen",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Pragatidesai24.github.io/AI-Component-Generator-",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+   "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start"
   },
   "dependencies": {
     "@google/genai": "^1.29.1",
@@ -21,6 +25,7 @@
     "react-select": "^5.10.2",
     "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5"
+   
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
